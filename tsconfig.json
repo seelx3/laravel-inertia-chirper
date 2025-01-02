@@ -57,6 +57,7 @@
 
         // Additional options
         "noUnusedLocals": true,
-        "noUnusedParameters": true
+        "noUnusedParameters": true,
+        "noImplicitAny": true
     }
 }
