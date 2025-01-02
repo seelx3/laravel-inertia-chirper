@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import DropDown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
 import InputError from '@/Components/InputError.vue';
