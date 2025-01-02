@@ -7,10 +7,13 @@ import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import { useForm } from '@inertiajs/vue3';
 import {ref} from 'vue';
+import type { ChirpModel } from '../Types/chirp';
 
 dayjs.extend(relativeTime);
 
-const props = defineProps(['chirp']);
+const props = defineProps<{
+    chirp: ChirpModel;
+}>();
 
 const form = useForm({
     message: props.chirp.message,

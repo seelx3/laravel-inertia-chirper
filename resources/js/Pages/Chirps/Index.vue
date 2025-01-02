@@ -4,8 +4,11 @@ import Chirp from '@/Components/Chirp.vue';
 import InputError from '@/Components/InputError.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import { useForm, Head } from '@inertiajs/vue3';
+import type { ChirpModel } from '../../Types/chirp';
 
-defineProps(['chirps']);
+defineProps<{
+    chirps: ChirpModel[];
+}>();
 
 const form = useForm({
     message: '',
